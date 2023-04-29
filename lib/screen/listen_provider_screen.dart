@@ -20,6 +20,7 @@ class _ListenProviderScreenState extends ConsumerState<ListenProviderScreen>
     tabController = TabController(
       length: 10,
       vsync: this,
+      //이렇게 하면 화면에서 나갔다가 와도 최근 페이지에 머무른다
       initialIndex: ref.read(listenProvider),
     );
     super.initState();
