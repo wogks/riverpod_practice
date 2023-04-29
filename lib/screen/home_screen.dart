@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:riverpodpractice/screen/autodispose_modifier_screen.dart';
 import 'package:riverpodpractice/screen/familly_modifier_screen.dart';
 import 'package:riverpodpractice/screen/future_provider_screen.dart';
+import 'package:riverpodpractice/screen/listen_provider_screen.dart';
 import 'package:riverpodpractice/screen/state_notifier_provider_screen.dart';
 import 'package:riverpodpractice/screen/state_provider_screen.dart';
 import 'package:riverpodpractice/screen/stream_provider_screen.dart';
@@ -82,6 +83,17 @@ class HomeScreen extends StatelessWidget {
               );
             },
             child: const Text('AutoDisposeModifierScreen'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ListenProviderScreen(),
+                ),
+              );
+            },
+            child: const Text('ListenProviderScreen'),
           ),
         ],
       ),
